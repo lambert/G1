@@ -1,0 +1,32 @@
+Checking non-numbered parts...
+
+Checking duplicated references...
+
+Checking nets with only one connection...
+
+Checking pins without the 'pintype' attribute...
+
+Checking type of pins connected to a net...
+ERROR: Pin(s) with pintype 'output': U2:20 U1:18 
+	are connected by net 'unnamed_net3'
+	to pin(s) with pintype 'output': U2:20 U1:18 
+ERROR: Net unnamed_net2 is not driven.
+ERROR: Net unnamed_net1 is not driven.
+ERROR: Pin(s) with pintype 'output': U2:32 U1:29 
+	are connected by net 'PSEN'
+	to pin(s) with pintype 'output': U2:32 U1:29 
+ERROR: Net AE is not driven.
+ERROR: Pin(s) with pintype 'output': U2:33 U1:30 
+	are connected by net 'ALE'
+	to pin(s) with pintype 'output': U2:33 U1:30 
+
+Checking unconnected pins...
+
+Checking slots...
+
+Checking duplicated slots...
+
+Checking unused slots...
+
+No warnings found. 
+Found 6 errors.

@@ -1,0 +1,68 @@
+START header
+
+gEDA's netlist format
+Created specifically for testing of gnetlist
+
+END header
+
+START components
+
+U2 device=PLCC_SOCKET
+U1 device=DIP_SOCKET
+
+END components
+
+START renamed-nets
+
+
+END renamed-nets
+
+START nets
+
+unnamed_net7 : U2 34 
+unnamed_net6 : U2 23 
+unnamed_net5 : U2 12 
+unnamed_net4 : U2 1 
+Vcc : U2 44, U1 40 
+GND : U2 22, U1 20 
+unnamed_net3 : U2 20, U1 18 
+unnamed_net2 : U2 21, U1 19 
+unnamed_net1 : U2 10, U1 9 
+P3_7 : U2 19, U1 17 
+P3_6 : U2 18, U1 16 
+P3_5 : U2 17, U1 15 
+P3_4 : U2 16, U1 14 
+P3_3 : U2 15, U1 13 
+P3_2 : U2 14, U1 12 
+P3_1 : U2 13, U1 11 
+P3_0 : U2 11, U1 10 
+P1_7 : U2 9, U1 8 
+P1_6 : U2 8, U1 7 
+P1_5 : U2 7, U1 6 
+P1_4 : U2 6, U1 5 
+P1_3 : U2 5, U1 4 
+P1_2 : U2 4, U1 3 
+P1_1 : U2 3, U1 2 
+P1_0 : U2 2, U1 1 
+PSEN : U2 32, U1 29 
+P2_7 : U2 31, U1 28 
+P2_6 : U2 30, U1 27 
+P2_5 : U2 29, U1 26 
+P2_4 : U2 28, U1 25 
+P2_3 : U2 27, U1 24 
+P2_2 : U2 26, U1 23 
+P2_1 : U2 25, U1 22 
+P2_0 : U2 24, U1 21 
+P0_7 : U2 36, U1 32 
+P0_6 : U2 37, U1 33 
+P0_5 : U2 38, U1 34 
+P0_4 : U2 39, U1 35 
+P0_3 : U2 40, U1 36 
+P0_2 : U2 41, U1 37 
+P0_1 : U2 42, U1 38 
+P0_0 : U2 43, U1 39 
+AE : U2 35, U1 31 
+ALE : U2 33, U1 30 
+
+END nets
+
