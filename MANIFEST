@@ -10,6 +10,7 @@ ecad/gnucap/README.md
 ecad/gschem/BOM/G1_8051_ARDUONE_ZERO_bom.csv
 ecad/gschem/DRC/G1.000.00.00.01.sch.txt
 ecad/gschem/DRC/G1.001.00.01.01.sch.txt
+ecad/gschem/DRC/G1.002.00.01.01.sch.txt
 ecad/gschem/G1.000.00.00.01.sch
 ecad/gschem/G1.001.00.01.01.sch
 ecad/gschem/G1.002.00.01.01.sch
@@ -20,6 +21,7 @@ ecad/gschem/doc
 ecad/gschem/gafrc
 ecad/gschem/geda_netlist/G1.000.00.00.01.sch.net
 ecad/gschem/geda_netlist/G1.001.00.01.01.sch.net
+ecad/gschem/geda_netlist/G1.002.00.01.01.sch.net
 ecad/gschem/gnetlistrc
 ecad/gschem/gschemrc
 ecad/gschem/sym
@@ -27,4 +29,8 @@ ecad/pcb/G1.001.00.01.01.pcb
 ecad/pcb/G1.002.00.01.01.pcb
 ecad/pcb/Makefile
 ecad/pcb/README.md
+ecad/pcb/bom/G1.001.00.01.01.pcb.bom
+ecad/pcb/bom/G1.002.00.01.01.pcb.bom
 ecad/pcb/fab/G1.001.00.01.01.gvp
+ecad/pcb/pnp/G1.001.00.01.01.xy
+ecad/pcb/pnp/G1.002.00.01.01.xy
