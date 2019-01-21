@@ -1,4 +1,4 @@
-# 805x Arduone ZERO board
+# 8051 Arduone ZERO board
 
 [License information](LICENSE.md)
 
