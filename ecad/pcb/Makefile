@@ -1,7 +1,8 @@
 PROJNAME = G1_8051_ARDUONE_ZERO
 
 LAYOUTS = \
-	G1.001.00.01.01.pcb
+	G1.001.00.01.01.pcb \
+	G1.002.00.01.01.pcb
 
 # Generic stuff follows from here.
 
