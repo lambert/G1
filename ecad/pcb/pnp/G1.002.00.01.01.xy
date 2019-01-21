@@ -1,0 +1,9 @@
+# PcbXY Version 1.0
+# Date: Mon 21 Jan 2019 07:29:45 PM GMT UTC
+# Author: Bert Timmerman
+# Title: G1.001.00.01.01 - PCB X-Y
+# RefDes, Description, Value, X, Y, rotation, top/bottom
+# X,Y in mm.  rotation in degrees.
+# --------------------------------------------
+U1,"DIPS40600____.fp","unknown",38.10,44.68,90,top
+U2,"PLCCS127P1750X1750X457-44N____.fp","unknown",38.10,21.82,0,top
