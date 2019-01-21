@@ -2,7 +2,8 @@ PROJNAME = G1_8051_ARDUONE_ZERO
 
 DESIGN = \
 	G1.000.00.00.01.sch \
-	G1.001.00.01.01.sch
+	G1.001.00.01.01.sch \
+	G1.002.00.01.01.sch
 
 DFS = \
 
