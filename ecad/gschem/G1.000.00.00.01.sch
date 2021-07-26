@@ -1,4 +1,4 @@
-v 20110115 2
+v 20130925 2
 C 500 500 0 0 0 A3-sheet_000.sym
 {
 T 15900 2200 5 10 0 0 0 0 1
@@ -12,7 +12,7 @@ page=01
 T 11500 600 5 10 1 1 0 0 1
 pages=01
 T 13900 900 5 10 1 1 0 0 1
-revision=2190119
+revision=20210726
 T 13900 600 5 10 1 1 0 0 1
 author=Bert Timmerman
 T 10000 1400 5 10 1 1 0 0 1
@@ -58,3 +58,22 @@ limitation.
 No warranties are given. The license may not give you all of the permissions
 necessary for your intended use. For example, other rights such as publicity,
 privacy, or moral rights may limit how you use the material.
+C 8400 1200 1 0 0 CC-BY-SA.sym
+{
+T 8500 2200 5 10 0 0 0 0 1
+symversion=20180915
+T 8500 2400 5 10 0 0 0 0 1
+footprint=CC-BY-SA.fp
+}
+C 7600 1500 1 0 0 OSHW.sym
+{
+T 7700 2700 5 10 0 0 0 0 1
+symversion=20201223
+}
+C 8400 900 1 0 0 Made_in_NL.sym
+{
+T 8500 1900 5 10 0 0 0 0 1
+symversion=20180915
+T 8500 2100 5 10 0 0 0 0 1
+footprint=NL_contour_filled_150x188.fp
+}

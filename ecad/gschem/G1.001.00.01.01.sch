@@ -1,4 +1,4 @@
-v 20110115 2
+v 20130925 2
 C 0 200 0 0 0 A1-sheet.sym
 {
 T 26200 300 5 10 1 1 0 0 1
@@ -14,22 +14,9 @@ comment=schematic
 T 26200 1300 5 10 1 1 0 0 1
 description=8051 Arduone ZERO Board (DIP40)
 T 30100 600 5 10 1 1 0 0 1
-revision=20190120
+revision=20210726
 T 30100 300 5 10 1 1 0 0 1
 author=Bert Timmerman
-}
-C 800 18100 1 0 0 CON-power-jack_NO.sym
-{
-T 900 19600 5 8 0 0 0 0 1
-device=BARREL-JACK-NO
-T 900 19200 5 8 0 0 0 0 1
-symversion=20180706
-T 900 19000 5 10 1 1 0 0 1
-refdes=J1
-T 900 19400 5 8 0 0 0 0 1
-footprint=CON-power-jack-NO.fp
-T 800 18100 5 10 0 0 0 0 1
-near=edge
 }
 C 1800 19200 1 0 0 5V-plus-1.sym
 C 1900 17600 1 0 0 gnd-1.sym
@@ -38,60 +25,82 @@ C 3700 19000 1 270 0 capacitor-1.sym
 T 4400 18800 5 10 0 0 270 0 1
 device=CAPACITOR
 T 3600 18400 5 10 1 1 90 0 1
-refdes=C7
+refdes=C6
 T 4600 18800 5 10 0 0 270 0 1
 symversion=0.1
 T 4300 18300 5 10 1 1 90 0 1
 value=100nF
+T 3700 19000 5 10 0 0 0 0 1
+footprint=CAPA508____.fp
+T 3700 19000 5 10 0 1 0 0 1
+manufacturer=Holystone
+T 3700 19000 5 10 0 1 0 0 1
+manufacturer_part_number=RDCX104K050DKA
+T 3700 19000 5 10 0 1 0 0 1
+vendor=Conrad
+T 3700 19000 5 10 0 1 0 0 1
+vendor_part_number=531885
+T 3700 19000 5 10 0 0 0 0 1
+near=IC2
 }
 C 2700 19000 1 270 0 capacitor-2.sym
 {
 T 3400 18800 5 10 0 0 270 0 1
 device=POLARIZED_CAPACITOR
 T 2600 18400 5 10 1 1 90 0 1
-refdes=C6
+refdes=C11
 T 3600 18800 5 10 0 0 270 0 1
 symversion=0.1
-T 3300 18300 5 10 1 1 90 0 1
-value=220uF
+T 3300 18100 5 10 1 1 90 0 1
+value=220uF/35V
+T 2700 19000 5 10 0 0 0 0 1
+manufacturer_part_number=ECA1VM221
+T 2700 19000 5 10 0 0 0 0 1
+vendor_part_number=441851
+T 2700 19000 5 10 0 0 0 0 1
+vendor=Conrad
+T 2700 19000 5 10 0 0 0 0 1
+manufacturer=Panasonic
+T 2700 19000 5 10 0 1 0 0 1
+footprint=CAPPR350-800X1150____.fp
+T 2700 19000 5 10 0 0 0 0 1
+near=CN2
 }
 C 4800 19000 1 270 0 capacitor-1.sym
 {
 T 5500 18800 5 10 0 0 270 0 1
 device=CAPACITOR
 T 4700 18400 5 10 1 1 90 0 1
-refdes=C11
+refdes=C2
 T 5700 18800 5 10 0 0 270 0 1
 symversion=0.1
 T 5400 18300 5 10 1 1 90 0 1
 value=100nF
 T 4800 19000 5 10 0 0 0 0 1
-near=U1
+near=IC1
+T 4800 19000 5 10 0 0 0 0 1
+footprint=CAPA508____.fp
+T 4800 19000 5 10 0 1 0 0 1
+manufacturer=Holystone
+T 4800 19000 5 10 0 1 0 0 1
+manufacturer_part_number=RDCX104K050DKA
+T 4800 19000 5 10 0 1 0 0 1
+vendor=Conrad
+T 4800 19000 5 10 0 1 0 0 1
+vendor_part_number=Conrad
 }
-C 5600 19100 1 0 0 resistor-2.sym
-{
-T 6000 19450 5 10 0 0 0 0 1
-device=RESISTOR
-T 5800 19400 5 10 1 1 0 0 1
-refdes=R1
-T 5800 18900 5 10 1 1 0 0 1
-value=220
-}
-N 7000 17900 2000 17900 4
-N 7000 18100 7000 17900 4
+N 5000 17900 2000 17900 4
 N 2900 18100 2900 17900 4
 N 3900 17900 3900 18100 4
 N 5000 18100 5000 17900 4
-N 7000 19000 7000 19200 4
-N 7000 19200 6500 19200 4
-N 2000 19200 5600 19200 4
+N 2000 19200 5000 19200 4
 N 5000 19200 5000 19000 4
 N 3900 19200 3900 19000 4
 N 2900 19200 2900 19000 4
-N 2000 19200 2000 18800 4
-N 2000 18800 1600 18800 4
-N 1600 18200 2000 18200 4
-N 2000 18500 2000 17900 4
+N 2000 19200 2000 18700 4
+N 2000 18700 1600 18700 4
+N 1600 18300 2000 18300 4
+N 2000 18300 2000 17900 4
 C 15800 8500 1 0 0 AT89C51_DIP.sym
 {
 T 18800 17400 5 10 1 1 0 6 1
@@ -108,25 +117,18 @@ device=MAX232
 T 7500 11900 5 10 1 1 0 0 1
 refdes=U3
 T 9500 12250 5 10 0 0 0 6 1
-footprint=DIP16
-}
-C 7200 18100 1 90 0 LED.sym
-{
-T 5000 18200 5 10 0 0 90 0 1
-symversion=20180121
-T 5200 18200 5 10 0 0 90 0 1
-device=LED
-T 6650 18550 5 10 1 1 90 0 1
-refdes=D1
+footprint=DIP16300____.fp
 }
 C 2900 9000 1 0 0 DB9-1.sym
 {
 T 3900 11900 5 10 0 0 0 0 1
 device=DB9
 T 3100 12200 5 10 1 1 0 0 1
-refdes=J2
+refdes=CN1
 T 2900 9000 5 10 0 0 0 0 1
 near=edge
+T 2900 9000 5 10 0 0 0 0 1
+footprint=CON-DSUB-9N__laying_female.fp
 }
 N 4100 10500 7200 10500 4
 N 7200 10800 6100 10800 4
@@ -140,52 +142,92 @@ C 10500 11200 1 0 0 capacitor-2.sym
 T 10700 11900 5 10 0 0 0 0 1
 device=POLARIZED_CAPACITOR
 T 11100 11200 5 10 1 1 0 0 1
-refdes=C1
+refdes=C4
 T 10700 12100 5 10 0 0 0 0 1
 symversion=0.1
-T 10400 11200 5 10 1 1 0 0 1
-value=4.7uF
+T 10400 11000 5 10 1 1 0 0 1
+value=4.7uF/100V
 T 10500 11200 5 10 0 0 180 0 1
 near=U3
+T 10500 11200 5 10 0 1 0 0 1
+manufacturer=Panasonic
+T 10500 11200 5 10 0 1 0 0 1
+manufacturer_part_number=ECA-2AHG4R7
+T 10500 11200 5 10 0 1 0 0 1
+vendor=Conrad
+T 10500 11200 5 10 0 1 0 0 1
+vendor_part_number=1471042
+T 10500 11200 5 10 0 1 0 0 1
+footprint=CAPPR200-500X1100____.fp
 }
 C 10500 10300 1 0 0 capacitor-2.sym
 {
 T 10700 11000 5 10 0 0 0 0 1
 device=POLARIZED_CAPACITOR
 T 11100 10300 5 10 1 1 0 0 1
-refdes=C2
+refdes=C8
 T 10700 11200 5 10 0 0 0 0 1
 symversion=0.1
-T 10400 10300 5 10 1 1 0 0 1
-value=4.7uF
+T 11700 10400 5 10 1 1 0 0 1
+value=4.7uF/100V
 T 10500 10300 5 10 0 0 180 0 1
 near=U3
+T 10500 10300 5 10 0 1 0 0 1
+manufacturer=Panasonic
+T 10500 10300 5 10 0 1 0 0 1
+manufacturer_part_number=ECA-2AHG4R7
+T 10500 10300 5 10 0 1 0 0 1
+vendor=Conrad
+T 10500 10300 5 10 0 1 0 0 1
+vendor_part_number=1471042
+T 10500 10300 5 10 0 1 0 0 1
+footprint=CAPPR200-500X1100____.fp
 }
 C 10700 9500 1 270 0 capacitor-2.sym
 {
 T 11400 9300 5 10 0 0 270 0 1
 device=POLARIZED_CAPACITOR
 T 10600 8900 5 10 1 1 90 0 1
-refdes=C3
+refdes=C13
 T 11600 9300 5 10 0 0 270 0 1
 symversion=0.1
-T 11300 8800 5 10 1 1 90 0 1
-value=4.7uF
+T 11300 8600 5 10 1 1 90 0 1
+value=4.7uF/100V
 T 10700 9500 5 10 0 0 90 0 1
 near=U3
+T 10700 9500 5 10 0 1 0 0 1
+manufacturer=Panasonic
+T 10700 9500 5 10 0 1 0 0 1
+manufacturer_part_number=ECA-2AHG4R7
+T 10700 9500 5 10 0 1 0 0 1
+vendor=Conrad
+T 10700 9500 5 10 0 1 0 0 1
+vendor_part_number=1471042
+T 10700 9500 5 10 0 1 0 0 1
+footprint=CAPPR200-500X1100____.fp
 }
 C 10000 12500 1 270 0 capacitor-2.sym
 {
 T 10700 12300 5 10 0 0 270 0 1
 device=POLARIZED_CAPACITOR
 T 9900 11900 5 10 1 1 90 0 1
-refdes=C4
+refdes=C1
 T 10900 12300 5 10 0 0 270 0 1
 symversion=0.1
 T 10600 11800 5 10 1 1 90 0 1
-value=4.7uF
+value=4.7uF/100V
 T 10000 12500 5 10 0 0 90 0 1
 near=U3
+T 10000 12500 5 10 0 1 0 0 1
+manufacturer=Panasonic
+T 10000 12500 5 10 0 1 0 0 1
+manufacturer_part_number=ECA-2AHG4R7
+T 10000 12500 5 10 0 1 0 0 1
+vendor=Conrad
+T 10000 12500 5 10 0 1 0 0 1
+vendor_part_number=1471042
+T 10000 12500 5 10 0 1 0 0 1
+footprint=CAPPR200-500X1100____.fp
 }
 C 17600 6900 1 0 0 crystal-1.sym
 {
@@ -199,742 +241,81 @@ T 17500 6600 5 10 1 1 0 0 1
 value=11.0592MHz
 T 17600 6900 5 10 0 0 0 0 1
 near=U1
+T 17600 6900 5 10 0 0 0 0 1
+vendor=Conrad
+T 17600 6900 5 10 0 0 0 0 1
+vendor_part_number=155238
+T 17600 6900 5 10 0 0 0 0 1
+manufacturer_part_number=11.0592MHZ HC49 30/50/40/18PF/ATF
+T 17600 6900 5 10 0 0 0 0 1
+manufacturer=EuroQuartz
+T 17600 6900 5 10 0 0 0 0 1
+footprint=XTAL488P1150X490X1360__HC49__.fp
 }
 C 17100 6700 1 270 0 capacitor-1.sym
 {
 T 17800 6500 5 10 0 0 270 0 1
 device=CAPACITOR
 T 17000 6100 5 10 1 1 90 0 1
-refdes=C8
+refdes=C9
 T 18000 6500 5 10 0 0 270 0 1
 symversion=0.1
 T 17700 6000 5 10 1 1 90 0 1
 value=27pF
 T 17100 6700 5 10 0 0 0 0 1
 near=X1
+T 17100 6700 5 10 0 0 0 0 1
+vendor=Conrad
+T 17100 6700 5 10 0 0 0 0 1
+manufacturer=Hitano
+T 17100 6700 5 10 0 0 0 0 1
+vendor_part_number=451681
+T 17100 6700 5 10 0 1 0 0 1
+footprint=CAPA508____.fp
+T 17100 6700 5 10 0 1 0 0 1
+manufacturer_part_number=451681
 }
 C 18400 6700 1 270 0 capacitor-1.sym
 {
 T 19100 6500 5 10 0 0 270 0 1
 device=CAPACITOR
 T 18300 6100 5 10 1 1 90 0 1
-refdes=C9
+refdes=C7
 T 19300 6500 5 10 0 0 270 0 1
 symversion=0.1
 T 19000 6000 5 10 1 1 90 0 1
 value=27pF
 T 18400 6700 5 10 0 0 0 0 1
 near=X1
+T 18400 6700 5 10 0 1 0 0 1
+footprint=CAPA508____.fp
+T 18400 6700 5 10 0 1 0 0 1
+manufacturer=Hitano
+T 18400 6700 5 10 0 1 0 0 1
+vendor=Conrad
+T 18400 6700 5 10 0 1 0 0 1
+vendor_part_number=451681
+T 18400 6700 5 10 0 1 0 0 1
+manufacturer_part_number=451681
 }
 C 14200 6300 1 0 0 gnd-1.sym
 N 17300 5500 18600 5500 4
 N 17300 5800 17300 5500 4
 N 18600 5500 18600 5800 4
 N 18300 7000 18600 7000 4
-N 18600 6700 18600 8000 4
+N 18600 6700 18600 8100 4
 N 17600 7000 17300 7000 4
-N 17300 6700 17300 8000 4
-N 17600 8000 17600 8600 4
-N 18200 8000 18200 8600 4
-N 17300 8000 17600 8000 4
-N 18200 8000 18600 8000 4
-C 25900 9200 1 0 0 CON-SIL-254P-20.sym
-{
-T 27400 13700 5 10 0 0 0 0 1
-footprint=CON-SIL-254P-20N____.fp
-T 27400 13500 5 10 0 0 0 0 1
-device=CONNECTOR
-T 26200 17300 5 10 1 1 0 0 1
-refdes=J4
-T 27400 13300 5 10 0 0 0 0 1
-symversion=20190119
-T 25900 9200 5 10 0 0 0 0 1
-near=edge
-}
-C 29400 9200 1 0 0 CON-SIL-254P-20.sym
-{
-T 30900 13700 5 10 0 0 0 0 1
-footprint=CON-SIL-254P-20N____.fp
-T 30900 13500 5 10 0 0 0 0 1
-device=CONNECTOR
-T 29700 17400 5 10 1 1 0 0 1
-refdes=J3
-T 30900 13300 5 10 0 0 0 0 1
-symversion=20190119
-T 29400 9200 5 10 0 0 0 0 1
-near=edge
-}
-N 25700 17000 25900 17000 4
-{
-T 25400 17000 5 10 1 1 0 6 1
-netname=P0_0
-}
-T 26800 13200 9 10 1 0 90 4 1
-PORT1
-N 25700 16600 25900 16600 4
-{
-T 25400 16600 5 10 1 1 0 6 1
-netname=P0_1
-}
-N 25700 16200 25900 16200 4
-{
-T 25400 16200 5 10 1 1 0 6 1
-netname=P0_2
-}
-N 25700 15800 25900 15800 4
-{
-T 25400 15800 5 10 1 1 0 6 1
-netname=P0_3
-}
-N 25700 15400 25900 15400 4
-{
-T 25400 15400 5 10 1 1 0 6 1
-netname=P0_4
-}
-N 25700 15000 25900 15000 4
-{
-T 25400 15000 5 10 1 1 0 6 1
-netname=P0_5
-}
-N 25700 14600 25900 14600 4
-{
-T 25400 14600 5 10 1 1 0 6 1
-netname=P0_6
-}
-N 25700 14200 25900 14200 4
-{
-T 25400 14200 5 10 1 1 0 6 1
-netname=P0_7
-}
-N 25700 13800 25900 13800 4
-{
-T 25400 13800 5 10 1 1 0 6 1
-netname=P2_0
-}
-N 25700 13400 25900 13400 4
-{
-T 25400 13400 5 10 1 1 0 6 1
-netname=P2_1
-}
-N 25700 13000 25900 13000 4
-{
-T 25400 13000 5 10 1 1 0 6 1
-netname=P2_2
-}
-N 25700 12600 25900 12600 4
-{
-T 25400 12600 5 10 1 1 0 6 1
-netname=P2_3
-}
-N 25700 12200 25900 12200 4
-{
-T 25400 12200 5 10 1 1 0 6 1
-netname=P2_4
-}
-N 25700 11800 25900 11800 4
-{
-T 25400 11800 5 10 1 1 0 6 1
-netname=P2_5
-}
-N 25700 11400 25900 11400 4
-{
-T 25400 11400 5 10 1 1 0 6 1
-netname=P2_6
-}
-N 25700 11000 25900 11000 4
-{
-T 25400 11000 5 10 1 1 0 6 1
-netname=P2_7
-}
-C 25400 9700 1 270 0 gnd-1.sym
-C 25700 10200 1 90 0 5V-plus-1.sym
-N 25700 9400 25900 9400 4
-N 25700 9400 25700 9800 4
-N 25900 9800 25700 9800 4
-N 25700 10200 25700 10600 4
-N 25900 10600 25700 10600 4
-N 25900 10200 25700 10200 4
-T 30300 13200 9 10 1 0 90 4 1
-PORT2
-N 19100 16900 19300 16900 4
-{
-T 19600 16900 5 10 1 1 0 0 1
-netname=P0_0
-}
-N 19100 16500 19300 16500 4
-{
-T 19600 16500 5 10 1 1 0 0 1
-netname=P0_1
-}
-N 19100 16100 19300 16100 4
-{
-T 19600 16100 5 10 1 1 0 0 1
-netname=P0_2
-}
-N 19100 15700 19300 15700 4
-{
-T 19600 15700 5 10 1 1 0 0 1
-netname=P0_3
-}
-N 19100 15300 19300 15300 4
-{
-T 19600 15300 5 10 1 1 0 0 1
-netname=P0_4
-}
-N 19100 14900 19300 14900 4
-{
-T 19600 14900 5 10 1 1 0 0 1
-netname=P0_5
-}
-N 19100 14500 19300 14500 4
-{
-T 19600 14500 5 10 1 1 0 0 1
-netname=P0_6
-}
-N 19100 14100 19300 14100 4
-{
-T 19600 14100 5 10 1 1 0 0 1
-netname=P0_7
-}
-N 19100 13500 19300 13500 4
-{
-T 19600 13500 5 10 1 1 0 0 1
-netname=P2_0
-}
-N 19100 13100 19300 13100 4
-{
-T 19600 13100 5 10 1 1 0 0 1
-netname=P2_1
-}
-N 19100 12700 19300 12700 4
-{
-T 19600 12700 5 10 1 1 0 0 1
-netname=P2_2
-}
-N 19100 12300 19300 12300 4
-{
-T 19600 12300 5 10 1 1 0 0 1
-netname=P2_3
-}
-N 19100 11900 19300 11900 4
-{
-T 19600 11900 5 10 1 1 0 0 1
-netname=P2_4
-}
-N 19100 11500 19300 11500 4
-{
-T 19600 11500 5 10 1 1 0 0 1
-netname=P2_5
-}
-N 19100 11100 19300 11100 4
-{
-T 19600 11100 5 10 1 1 0 0 1
-netname=P2_6
-}
-N 19100 10700 19300 10700 4
-{
-T 19600 10700 5 10 1 1 0 0 1
-netname=P2_7
-}
-N 15900 16900 15700 16900 4
-{
-T 15400 16900 5 10 1 1 0 6 1
-netname=P1_0
-}
-N 15900 16500 15700 16500 4
-{
-T 15400 16500 5 10 1 1 0 6 1
-netname=P1_1
-}
-N 15900 16100 15700 16100 4
-{
-T 15400 16100 5 10 1 1 0 6 1
-netname=P1_2
-}
-N 15900 15700 15700 15700 4
-{
-T 15400 15700 5 10 1 1 0 6 1
-netname=P1_3
-}
-N 15900 15300 15700 15300 4
-{
-T 15400 15300 5 10 1 1 0 6 1
-netname=P1_4
-}
-N 15900 14900 15700 14900 4
-{
-T 15400 14900 5 10 1 1 0 6 1
-netname=P1_5
-}
-N 15900 14500 15700 14500 4
-{
-T 15400 14500 5 10 1 1 0 6 1
-netname=P1_6
-}
-N 15900 14100 15700 14100 4
-{
-T 15400 14100 5 10 1 1 0 6 1
-netname=P1_7
-}
-U 19500 10900 19500 19000 10 0
-U 15500 19000 29000 19000 10 0
-C 19300 16900 1 0 0 busripper-1.sym
-{
-T 19300 17300 5 8 0 0 0 0 1
-device=none
-}
-C 19300 16500 1 0 0 busripper-1.sym
-{
-T 19300 16900 5 8 0 0 0 0 1
-device=none
-}
-C 19300 16100 1 0 0 busripper-1.sym
-{
-T 19300 16500 5 8 0 0 0 0 1
-device=none
-}
-C 19300 15700 1 0 0 busripper-1.sym
-{
-T 19300 16100 5 8 0 0 0 0 1
-device=none
-}
-C 19300 15300 1 0 0 busripper-1.sym
-{
-T 19300 15700 5 8 0 0 0 0 1
-device=none
-}
-C 19300 14900 1 0 0 busripper-1.sym
-{
-T 19300 15300 5 8 0 0 0 0 1
-device=none
-}
-C 19300 14500 1 0 0 busripper-1.sym
-{
-T 19300 14900 5 8 0 0 0 0 1
-device=none
-}
-C 19300 14100 1 0 0 busripper-1.sym
-{
-T 19300 14500 5 8 0 0 0 0 1
-device=none
-}
-C 19300 13500 1 0 0 busripper-1.sym
-{
-T 19300 13900 5 8 0 0 0 0 1
-device=none
-}
-C 19300 13100 1 0 0 busripper-1.sym
-{
-T 19300 13500 5 8 0 0 0 0 1
-device=none
-}
-C 19300 12700 1 0 0 busripper-1.sym
-{
-T 19300 13100 5 8 0 0 0 0 1
-device=none
-}
-C 19300 12300 1 0 0 busripper-1.sym
-{
-T 19300 12700 5 8 0 0 0 0 1
-device=none
-}
-C 19300 11900 1 0 0 busripper-1.sym
-{
-T 19300 12300 5 8 0 0 0 0 1
-device=none
-}
-C 19300 11500 1 0 0 busripper-1.sym
-{
-T 19300 11900 5 8 0 0 0 0 1
-device=none
-}
-C 19300 11100 1 0 0 busripper-1.sym
-{
-T 19300 11500 5 8 0 0 0 0 1
-device=none
-}
-C 19300 10700 1 0 0 busripper-1.sym
-{
-T 19300 11100 5 8 0 0 0 0 1
-device=none
-}
-C 25700 11000 1 90 0 busripper-1.sym
-{
-T 25300 11000 5 8 0 0 90 0 1
-device=none
-}
-C 25700 11400 1 90 0 busripper-1.sym
-{
-T 25300 11400 5 8 0 0 90 0 1
-device=none
-}
-C 25700 11800 1 90 0 busripper-1.sym
-{
-T 25300 11800 5 8 0 0 90 0 1
-device=none
-}
-C 25700 12200 1 90 0 busripper-1.sym
-{
-T 25300 12200 5 8 0 0 90 0 1
-device=none
-}
-C 25700 12600 1 90 0 busripper-1.sym
-{
-T 25300 12600 5 8 0 0 90 0 1
-device=none
-}
-C 25700 13000 1 90 0 busripper-1.sym
-{
-T 25300 13000 5 8 0 0 90 0 1
-device=none
-}
-C 25700 13400 1 90 0 busripper-1.sym
-{
-T 25300 13400 5 8 0 0 90 0 1
-device=none
-}
-C 25700 13800 1 90 0 busripper-1.sym
-{
-T 25300 13800 5 8 0 0 90 0 1
-device=none
-}
-C 25700 14200 1 90 0 busripper-1.sym
-{
-T 25300 14200 5 8 0 0 90 0 1
-device=none
-}
-C 25700 14600 1 90 0 busripper-1.sym
-{
-T 25300 14600 5 8 0 0 90 0 1
-device=none
-}
-C 25700 15000 1 90 0 busripper-1.sym
-{
-T 25300 15000 5 8 0 0 90 0 1
-device=none
-}
-C 25700 15400 1 90 0 busripper-1.sym
-{
-T 25300 15400 5 8 0 0 90 0 1
-device=none
-}
-C 25700 15800 1 90 0 busripper-1.sym
-{
-T 25300 15800 5 8 0 0 90 0 1
-device=none
-}
-C 25700 16200 1 90 0 busripper-1.sym
-{
-T 25300 16200 5 8 0 0 90 0 1
-device=none
-}
-C 25700 16600 1 90 0 busripper-1.sym
-{
-T 25300 16600 5 8 0 0 90 0 1
-device=none
-}
-C 25700 17000 1 90 0 busripper-1.sym
-{
-T 25300 17000 5 8 0 0 90 0 1
-device=none
-}
-U 25500 19000 25500 11200 10 0
-C 15700 16900 1 90 0 busripper-1.sym
-{
-T 15300 16900 5 8 0 0 90 0 1
-device=none
-}
-C 15700 16500 1 90 0 busripper-1.sym
-{
-T 15300 16500 5 8 0 0 90 0 1
-device=none
-}
-C 15700 16100 1 90 0 busripper-1.sym
-{
-T 15300 16100 5 8 0 0 90 0 1
-device=none
-}
-C 15700 15700 1 90 0 busripper-1.sym
-{
-T 15300 15700 5 8 0 0 90 0 1
-device=none
-}
-C 15700 15300 1 90 0 busripper-1.sym
-{
-T 15300 15300 5 8 0 0 90 0 1
-device=none
-}
-C 15700 14900 1 90 0 busripper-1.sym
-{
-T 15300 14900 5 8 0 0 90 0 1
-device=none
-}
-C 15700 14500 1 90 0 busripper-1.sym
-{
-T 15300 14500 5 8 0 0 90 0 1
-device=none
-}
-C 15700 14100 1 90 0 busripper-1.sym
-{
-T 15300 14100 5 8 0 0 90 0 1
-device=none
-}
-N 15900 13500 15700 13500 4
-{
-T 15400 13500 5 10 1 1 0 6 1
-netname=P3_0
-}
-N 15900 13100 15700 13100 4
-{
-T 15400 13100 5 10 1 1 0 6 1
-netname=P3_1
-}
-N 15900 12700 15700 12700 4
-{
-T 15400 12700 5 10 1 1 0 6 1
-netname=P3_2
-}
-N 15900 12300 15700 12300 4
-{
-T 15400 12300 5 10 1 1 0 6 1
-netname=P3_3
-}
-N 15900 11900 15700 11900 4
-{
-T 15400 11900 5 10 1 1 0 6 1
-netname=P3_4
-}
-N 15900 11500 15700 11500 4
-{
-T 15400 11500 5 10 1 1 0 6 1
-netname=P3_5
-}
-N 15900 11100 15700 11100 4
-{
-T 15400 11100 5 10 1 1 0 6 1
-netname=P3_6
-}
-N 15900 10700 15700 10700 4
-{
-T 15400 10700 5 10 1 1 0 6 1
-netname=P3_7
-}
-C 15700 13500 1 90 0 busripper-1.sym
-{
-T 15300 13500 5 8 0 0 90 0 1
-device=none
-}
-C 15700 13100 1 90 0 busripper-1.sym
-{
-T 15300 13100 5 8 0 0 90 0 1
-device=none
-}
-C 15700 12700 1 90 0 busripper-1.sym
-{
-T 15300 12700 5 8 0 0 90 0 1
-device=none
-}
-C 15700 12300 1 90 0 busripper-1.sym
-{
-T 15300 12300 5 8 0 0 90 0 1
-device=none
-}
-C 15700 11900 1 90 0 busripper-1.sym
-{
-T 15300 11900 5 8 0 0 90 0 1
-device=none
-}
-C 15700 11500 1 90 0 busripper-1.sym
-{
-T 15300 11500 5 8 0 0 90 0 1
-device=none
-}
-C 15700 11100 1 90 0 busripper-1.sym
-{
-T 15300 11100 5 8 0 0 90 0 1
-device=none
-}
-C 15700 10700 1 90 0 busripper-1.sym
-{
-T 15300 10700 5 8 0 0 90 0 1
-device=none
-}
-U 15500 10900 15500 19000 10 0
-N 29200 17000 29400 17000 4
-{
-T 28900 17000 5 10 1 1 0 6 1
-netname=P1_0
-}
-C 29200 17000 1 90 0 busripper-1.sym
-{
-T 28800 17000 5 8 0 0 90 0 1
-device=none
-}
-U 29000 19000 29000 11200 10 0
-N 29200 16600 29400 16600 4
-{
-T 28900 16600 5 10 1 1 0 6 1
-netname=P1_1
-}
-C 29200 16600 1 90 0 busripper-1.sym
-{
-T 28800 16600 5 8 0 0 90 0 1
-device=none
-}
-N 29200 16200 29400 16200 4
-{
-T 28900 16200 5 10 1 1 0 6 1
-netname=P1_2
-}
-C 29200 16200 1 90 0 busripper-1.sym
-{
-T 28800 16200 5 8 0 0 90 0 1
-device=none
-}
-N 29200 15800 29400 15800 4
-{
-T 28900 15800 5 10 1 1 0 6 1
-netname=P1_3
-}
-C 29200 15800 1 90 0 busripper-1.sym
-{
-T 28800 15800 5 8 0 0 90 0 1
-device=none
-}
-N 29200 15400 29400 15400 4
-{
-T 28900 15400 5 10 1 1 0 6 1
-netname=P1_4
-}
-C 29200 15400 1 90 0 busripper-1.sym
-{
-T 28800 15400 5 8 0 0 90 0 1
-device=none
-}
-N 29200 15000 29400 15000 4
-{
-T 28900 15000 5 10 1 1 0 6 1
-netname=P1_5
-}
-C 29200 15000 1 90 0 busripper-1.sym
-{
-T 28800 15000 5 8 0 0 90 0 1
-device=none
-}
-N 29200 14600 29400 14600 4
-{
-T 28900 14600 5 10 1 1 0 6 1
-netname=P1_6
-}
-C 29200 14600 1 90 0 busripper-1.sym
-{
-T 28800 14600 5 8 0 0 90 0 1
-device=none
-}
-N 29200 14200 29400 14200 4
-{
-T 28900 14200 5 10 1 1 0 6 1
-netname=P1_7
-}
-C 29200 14200 1 90 0 busripper-1.sym
-{
-T 28800 14200 5 8 0 0 90 0 1
-device=none
-}
-N 29200 13800 29400 13800 4
-{
-T 28900 13800 5 10 1 1 0 6 1
-netname=P3_0
-}
-C 29200 13800 1 90 0 busripper-1.sym
-{
-T 28800 13800 5 8 0 0 90 0 1
-device=none
-}
-N 29200 13400 29400 13400 4
-{
-T 28900 13400 5 10 1 1 0 6 1
-netname=P3_1
-}
-C 29200 13400 1 90 0 busripper-1.sym
-{
-T 28800 13400 5 8 0 0 90 0 1
-device=none
-}
-N 29200 13000 29400 13000 4
-{
-T 28900 13000 5 10 1 1 0 6 1
-netname=P3_2
-}
-C 29200 13000 1 90 0 busripper-1.sym
-{
-T 28800 13000 5 8 0 0 90 0 1
-device=none
-}
-N 29200 12600 29400 12600 4
-{
-T 28900 12600 5 10 1 1 0 6 1
-netname=P3_3
-}
-C 29200 12600 1 90 0 busripper-1.sym
-{
-T 28800 12600 5 8 0 0 90 0 1
-device=none
-}
-N 29200 12200 29400 12200 4
-{
-T 28900 12200 5 10 1 1 0 6 1
-netname=P3_4
-}
-C 29200 12200 1 90 0 busripper-1.sym
-{
-T 28800 12200 5 8 0 0 90 0 1
-device=none
-}
-N 29200 11800 29400 11800 4
-{
-T 28900 11800 5 10 1 1 0 6 1
-netname=P3_5
-}
-C 29200 11800 1 90 0 busripper-1.sym
-{
-T 28800 11800 5 8 0 0 90 0 1
-device=none
-}
-N 29200 11400 29400 11400 4
-{
-T 28900 11400 5 10 1 1 0 6 1
-netname=P3_6
-}
-C 29200 11400 1 90 0 busripper-1.sym
-{
-T 28800 11400 5 8 0 0 90 0 1
-device=none
-}
-N 29200 11000 29400 11000 4
-{
-T 28900 11000 5 10 1 1 0 6 1
-netname=P3_7
-}
-C 29200 11000 1 90 0 busripper-1.sym
-{
-T 28800 11000 5 8 0 0 90 0 1
-device=none
-}
-C 28900 9700 1 270 0 gnd-1.sym
-C 29200 10200 1 90 0 5V-plus-1.sym
-N 29200 9400 29400 9400 4
-N 29200 9400 29200 9800 4
-N 29400 9800 29200 9800 4
-N 29200 10200 29200 10600 4
-N 29400 10600 29200 10600 4
-N 29400 10200 29200 10200 4
+N 17300 6700 17300 8100 4
+N 17600 8100 17600 8600 4
+N 18200 8100 18200 8600 4
+N 17300 8100 17600 8100 4
+N 18200 8100 18600 8100 4
 C 20600 9100 1 270 0 switch-dip4-1.sym
 {
 T 21975 7700 5 8 0 0 270 0 1
 device=SWITCH_DIP4
 T 22150 8800 5 10 1 1 270 0 1
-refdes=S2
+refdes=DIP1
 T 20600 9100 5 10 0 0 0 0 1
 footprint=DIP08300____.fp
 T 20600 9100 5 10 0 0 0 0 1
@@ -943,7 +324,7 @@ near=edge
 C 14300 9300 1 90 1 switch-pushbutton-no-1.sym
 {
 T 14000 8700 5 10 1 1 90 0 1
-refdes=S1
+refdes=SW1
 T 13700 8900 5 10 0 0 270 2 1
 device=SWITCH_PUSHBUTTON_NO
 }
@@ -955,10 +336,20 @@ T 14800 8700 5 10 1 1 90 0 1
 refdes=C10
 T 14400 9100 5 10 0 0 270 2 1
 symversion=0.1
-T 15500 8600 5 10 1 1 90 0 1
-value=10uF
+T 15500 8400 5 10 1 1 90 0 1
+value=10uF/63V
 T 15300 9300 5 10 0 0 0 0 1
 near=S1
+T 15300 9300 5 10 0 0 0 0 1
+footprint=CAPPR200-500X1100____.fp
+T 15300 9300 5 10 0 0 0 0 1
+vendor=Conrad
+T 15300 9300 5 10 0 0 0 0 1
+vendor_part_number=792500
+T 15300 9300 5 10 0 0 0 0 1
+manufacturer_part_number=ECA1JM100
+T 15300 9300 5 10 0 0 0 0 1
+manufacturer=Panasonic
 }
 C 14100 9700 1 0 0 5V-plus-1.sym
 C 14400 7000 1 90 0 resistor-2.sym
@@ -966,9 +357,11 @@ C 14400 7000 1 90 0 resistor-2.sym
 T 14050 7400 5 10 0 0 90 0 1
 device=RESISTOR
 T 14100 7200 5 10 1 1 90 0 1
-refdes=R7
+refdes=R3
 T 14600 7200 5 10 1 1 90 0 1
 value=10k
+T 14400 7000 5 10 0 1 0 0 1
+footprint=RES1016-635X229____0.6W.fp
 }
 N 14300 8300 14300 7900 4
 N 14300 7000 14300 6600 4
@@ -979,50 +372,22 @@ N 15100 8400 15100 8100 4
 N 14300 8100 16800 8100 4
 N 16800 8600 16800 8100 4
 C 17900 5200 1 0 0 gnd-1.sym
-C 20900 7300 1 0 0 gnd-1.sym
-N 21000 7800 21000 7600 4
-C 22400 7800 1 0 0 5V-plus-1.sym
-N 21300 7800 21300 7600 4
+C 19900 5800 1 0 0 gnd-1.sym
+N 21000 7800 21000 7400 4
+C 22200 7800 1 0 0 5V-plus-1.sym
+N 21300 7400 21300 7800 4
 N 21600 7800 21600 7600 4
 N 21900 7800 21900 7600 4
-N 22600 7800 22600 7600 4
-N 21300 7600 22600 7600 4
-N 21900 9100 21900 11000 4
-N 21900 11000 24000 11000 4
-{
-T 24300 11000 5 8 1 1 0 1 1
-netname=P2_7
-}
-N 21600 9100 21600 11400 4
-N 21600 11400 24000 11400 4
-{
-T 24300 11400 5 8 1 1 0 1 1
-netname=P2_6
-}
-C 19300 9200 1 0 0 resistor-2.sym
-{
-T 19700 9550 5 10 0 0 0 0 1
-device=RESISTOR
-T 19500 9500 5 10 1 1 0 0 1
-refdes=R6
-T 19500 9000 5 10 1 1 0 0 1
-value=2k2
-}
-N 19100 9300 19300 9300 4
+N 22400 7800 22400 7600 4
+N 21600 7600 22400 7600 4
+N 21900 9100 21900 10700 4
+N 21900 10700 19100 10700 4
+N 21600 9100 21600 11100 4
+N 21600 11100 19100 11100 4
+N 19100 9300 21000 9300 4
 N 21000 9100 21000 9300 4
-N 21000 9300 20200 9300 4
-C 20200 9600 1 0 0 resistor-2.sym
-{
-T 20600 9950 5 10 0 0 0 0 1
-device=RESISTOR
-T 20400 9900 5 10 1 1 0 0 1
-refdes=R5
-T 20400 9400 5 10 1 1 0 0 1
-value=2k2
-}
-N 19100 9700 20200 9700 4
+N 19100 9700 21300 9700 4
 N 21300 9100 21300 9700 4
-N 21100 9700 21300 9700 4
 N 9800 11400 10500 11400 4
 N 9800 10800 11600 10800 4
 N 11600 10800 11600 11400 4
@@ -1117,16 +482,6 @@ value=NoConnection
 T 4200 10200 5 10 0 0 0 0 1
 device=DRC_Directive
 }
-C 24000 11500 1 180 1 output-1.sym
-{
-T 24100 11200 5 10 0 0 180 6 1
-device=OUTPUT
-}
-C 24000 11100 1 180 1 output-1.sym
-{
-T 24100 10800 5 10 0 0 180 6 1
-device=OUTPUT
-}
 C 19100 10000 1 0 0 nc-right-1.sym
 {
 T 19200 10500 5 10 0 0 0 0 1
@@ -1134,48 +489,454 @@ value=NoConnection
 T 19200 10700 5 10 0 0 0 0 1
 device=DRC_Directive
 }
-N 1600 18500 2000 18500 4
-N 12800 14100 14000 14100 4
+C 1600 17900 1 0 1 CON-SIL-254P-2.sym
 {
-T 14300 14100 5 8 1 1 0 1 1
-netname=P1_7
+T 1400 19900 5 10 0 0 0 6 1
+footprint=CON-SIL-254P-2N____.fp
+T 1400 19700 5 10 0 0 0 6 1
+device=CONNECTOR
+T 900 19000 5 10 1 1 0 0 1
+refdes=CN2
 }
-C 14000 14200 1 180 1 output-1.sym
+C 15400 10600 1 0 0 nc-left-1.sym
 {
-T 14100 13900 5 10 0 0 180 6 1
+T 15400 11000 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 11400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 16800 1 0 0 nc-right-1.sym
+{
+T 19200 17300 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 17500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 16400 1 0 0 nc-right-1.sym
+{
+T 19200 16900 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 17100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 16000 1 0 0 nc-right-1.sym
+{
+T 19200 16500 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 16700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 15600 1 0 0 nc-right-1.sym
+{
+T 19200 16100 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 16300 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 15200 1 0 0 nc-right-1.sym
+{
+T 19200 15700 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 15900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 14800 1 0 0 nc-right-1.sym
+{
+T 19200 15300 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 15500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 14400 1 0 0 nc-right-1.sym
+{
+T 19200 14900 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 15100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 14000 1 0 0 nc-right-1.sym
+{
+T 19200 14500 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 14700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 13400 1 0 0 nc-right-1.sym
+{
+T 19200 13900 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 14100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 13000 1 0 0 nc-right-1.sym
+{
+T 19200 13500 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 13700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 12600 1 0 0 nc-right-1.sym
+{
+T 19200 13100 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 13300 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 12200 1 0 0 nc-right-1.sym
+{
+T 19200 12700 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 12900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 11800 1 0 0 nc-right-1.sym
+{
+T 19200 12300 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 12500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 19100 11400 1 0 0 nc-right-1.sym
+{
+T 19200 11900 5 10 0 0 0 0 1
+value=NoConnection
+T 19200 12100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 11000 1 0 0 nc-left-1.sym
+{
+T 15400 11400 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 11800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 11400 1 0 0 nc-left-1.sym
+{
+T 15400 11800 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 12200 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 11800 1 0 0 nc-left-1.sym
+{
+T 15400 12200 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 12600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 12200 1 0 0 nc-left-1.sym
+{
+T 15400 12600 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 13000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 12600 1 0 0 nc-left-1.sym
+{
+T 15400 13000 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 13400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 14000 1 0 0 nc-left-1.sym
+{
+T 15400 14400 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 14800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 14400 1 0 0 nc-left-1.sym
+{
+T 15400 14800 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 15200 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 14800 1 0 0 nc-left-1.sym
+{
+T 15400 15200 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 15600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 15200 1 0 0 nc-left-1.sym
+{
+T 15400 15600 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 16000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 15600 1 0 0 nc-left-1.sym
+{
+T 15400 16000 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 16400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 16000 1 0 0 nc-left-1.sym
+{
+T 15400 16400 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 16800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 16400 1 0 0 nc-left-1.sym
+{
+T 15400 16800 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 17200 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15400 16800 1 0 0 nc-left-1.sym
+{
+T 15400 17200 5 10 0 0 0 0 1
+value=NoConnection
+T 15400 17600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 15300 7900 1 270 0 diode-3.sym
+{
+T 15850 7450 5 10 0 0 270 0 1
+device=DIODE
+T 15250 7350 5 10 1 1 90 0 1
+refdes=D1
+T 15900 7100 5 10 1 1 90 0 1
+value=1N4148
+T 15300 7900 5 10 0 0 0 0 1
+footprint=DIO1016-425X185_Diotec_1N4148_DO35_C1A2.fp
+T 15300 7900 5 10 0 0 0 0 1
+vendor=Conrad
+T 15300 7900 5 10 0 0 0 0 1
+manufacturer=Diodes
+}
+N 15500 7000 15500 6800 4
+N 15500 6800 14300 6800 4
+N 15500 7900 15500 8100 4
+B 25500 2100 6900 5000 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+C 25300 6600 1 0 0 MTG_hole.sym
+{
+T 25610 7250 5 10 0 0 0 0 1
+device=MTG
+T 26100 6700 5 10 1 1 0 0 1
+refdes=A
+T 25600 7700 5 10 0 0 0 0 1
+footprint=MTG____.fp
+}
+C 25300 2200 1 0 0 MTG_hole.sym
+{
+T 25610 2850 5 10 0 0 0 0 1
+device=MTG
+T 26100 2300 5 10 1 1 0 0 1
+refdes=B
+T 25600 3300 5 10 0 0 0 0 1
+footprint=MTG____.fp
+}
+C 31600 2200 1 0 0 MTG_hole.sym
+{
+T 31910 2850 5 10 0 0 0 0 1
+device=MTG
+T 31800 2300 5 10 1 1 0 6 1
+refdes=C
+T 31900 3300 5 10 0 0 0 0 1
+footprint=MTG____.fp
+}
+C 31600 6600 1 0 0 MTG_hole.sym
+{
+T 31910 7250 5 10 0 0 0 0 1
+device=MTG
+T 31800 6700 5 10 1 1 0 6 1
+refdes=D
+T 31900 7700 5 10 0 0 0 0 1
+footprint=MTG____.fp
+}
+B 29500 3500 700 2400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 26400 4800 400 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25500 3700 400 900 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25500 3200 300 400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25600 3800 200 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25600 4000 200 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25600 4200 200 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25600 4400 200 100 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+B 25600 4400 100 100 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+B 25600 4200 100 100 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+B 25600 4000 100 100 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+B 25600 3800 100 100 3 0 0 0 -1 -1 1 -1 -1 -1 -1 -1
+T 25400 4100 9 10 1 0 0 6 1
+DIP1
+T 25400 3400 9 10 1 0 0 7 1
+CN2
+T 29900 4200 9 10 1 0 90 0 1
+IC2
+L 29800 5900 29800 5800 3 0 0 0 -1 -1
+L 29900 5800 29900 5900 3 0 0 0 -1 -1
+A 29850 5800 50 180 180 3 0 0 0 -1 -1
+T 26700 5200 9 10 1 0 90 0 1
+IC1
+B 25500 5000 500 1400 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 25400 5700 9 10 1 0 0 7 1
+CN1
+L 26550 6000 26550 5900 3 0 0 0 -1 -1
+L 26650 5900 26650 6000 3 0 0 0 -1 -1
+A 26600 5900 50 180 180 3 0 0 0 -1 -1
+N 15700 13500 15900 13500 4
+{
+T 15000 13500 5 8 1 1 0 1 1
+netname=P3_0
+}
+N 15900 13100 15700 13100 4
+{
+T 15000 13100 5 8 1 1 0 1 1
+netname=P3_1
+}
+C 15700 13000 1 0 1 output-1.sym
+{
+T 15600 13300 5 10 0 0 0 6 1
 device=OUTPUT
 }
-C 12900 14700 1 90 0 resistor-2.sym
+C 14900 13400 1 0 0 input-1.sym
 {
-T 12550 15100 5 10 0 0 90 0 1
+T 14900 13700 5 10 0 0 0 0 1
+device=INPUT
+}
+C 20100 6300 1 90 0 resistor-2.sym
+{
+T 19750 6700 5 10 0 0 90 0 1
 device=RESISTOR
-T 12600 14900 5 10 1 1 90 0 1
+T 19800 6500 5 10 1 1 90 0 1
 refdes=R2
-T 13100 14900 5 10 1 1 90 0 1
-value=10k
+T 20300 6500 5 10 1 1 90 0 1
+value=2k2
+T 20100 6300 5 10 0 1 90 0 1
+footprint=RES1016-635X229____0.6W.fp
 }
-N 12800 14100 12800 14700 4
-N 12800 15800 12800 15600 4
-N 13700 14500 14000 14500 4
+N 20000 6300 20000 6100 4
+C 19800 8500 1 270 0 capacitor-2.sym
 {
-T 14300 14500 5 8 1 1 0 1 1
-netname=P1_6
+T 20500 8300 5 10 0 0 270 0 1
+device=POLARIZED_CAPACITOR
+T 19700 7900 5 10 1 1 90 0 1
+refdes=C5
+T 20700 8300 5 10 0 0 270 0 1
+symversion=0.1
+T 20400 7600 5 10 1 1 90 0 1
+value=4.7uF/100V
+T 19800 8500 5 10 0 0 90 0 1
+near=U3
+T 19800 8500 5 10 0 1 0 0 1
+manufacturer=Panasonic
+T 19800 8500 5 10 0 1 0 0 1
+manufacturer_part_number=ECA-2AHG4R7
+T 19800 8500 5 10 0 1 0 0 1
+vendor=Conrad
+T 19800 8500 5 10 0 1 0 0 1
+vendor_part_number=1471042
+T 19800 8500 5 10 0 1 0 0 1
+footprint=CAPPR200-500X1100____.fp
 }
-C 14000 14600 1 180 1 output-1.sym
+N 21300 7400 23200 7400 4
+N 20000 7600 20000 7200 4
+N 20000 7400 21000 7400 4
+C 19800 8700 1 0 0 5V-plus-1.sym
+N 20000 8700 20000 8500 4
+N 23200 7200 23200 7600 4
+C 23000 7200 1 270 0 capacitor-2.sym
 {
-T 14100 14300 5 10 0 0 180 6 1
-device=OUTPUT
+T 23700 7000 5 10 0 0 270 0 1
+device=POLARIZED_CAPACITOR
+T 23900 7000 5 10 0 0 270 0 1
+symversion=0.1
+T 23000 7200 5 10 0 0 90 0 1
+near=U3
+T 23000 7200 5 10 0 1 0 0 1
+manufacturer=Panasonic
+T 23000 7200 5 10 0 1 0 0 1
+manufacturer_part_number=ECA-2AHG4R7
+T 23000 7200 5 10 0 1 0 0 1
+vendor=Conrad
+T 23000 7200 5 10 0 1 0 0 1
+vendor_part_number=1471042
+T 23000 7200 5 10 0 1 0 0 1
+footprint=CAPPR200-500X1100____.fp
+T 22900 6600 5 10 1 1 90 0 1
+refdes=C3
+T 23600 6300 5 10 1 1 90 0 1
+value=4.7uF/100V
 }
-C 13100 15800 1 0 0 5V-plus-1.sym
-C 13800 14700 1 90 0 resistor-2.sym
+C 23100 5800 1 0 0 gnd-1.sym
+N 23200 6300 23200 6100 4
+C 23300 7600 1 90 0 resistor-2.sym
 {
-T 13450 15100 5 10 0 0 90 0 1
+T 22950 8000 5 10 0 0 90 0 1
 device=RESISTOR
-T 13500 14900 5 10 1 1 90 0 1
-refdes=R3
-T 14000 14900 5 10 1 1 90 0 1
-value=10k
+T 23000 7800 5 10 1 1 90 0 1
+refdes=R1
+T 23500 7800 5 10 1 1 90 0 1
+value=2k2
+T 23300 7600 5 10 0 1 90 0 1
+footprint=RES1016-635X229____0.6W.fp
 }
-N 13700 14500 13700 14700 4
-N 12800 15800 13700 15800 4
-N 13700 15600 13700 15800 4
+C 23000 8700 1 0 0 5V-plus-1.sym
+N 23200 8700 23200 8500 4
+C 15200 13700 1 0 1 CON-SIL-254P-8.sym
+{
+T 15000 17900 5 10 0 0 0 6 1
+footprint=CON-SIL-254P-8N____.fp
+T 15000 17700 5 10 0 0 0 6 1
+device=CONNECTOR
+T 14400 15500 5 10 1 1 90 3 1
+refdes=PORT1
+T 15000 17500 5 10 0 0 0 6 1
+symversion=20131217
+}
+C 19700 13700 1 0 0 CON-SIL-254P-8.sym
+{
+T 19900 17900 5 10 0 0 0 0 1
+footprint=CON-SIL-254P-8N____.fp
+T 19900 17700 5 10 0 0 0 0 1
+device=CONNECTOR
+T 20500 15500 5 10 1 1 90 5 1
+refdes=PORT0
+T 19900 17500 5 10 0 0 0 0 1
+symversion=20131217
+}
+C 19700 11100 1 0 0 CON-SIL-254P-6.sym
+{
+T 19900 14500 5 10 0 0 0 0 1
+footprint=CON-SIL-254P-6N____.fp
+T 19900 14300 5 10 0 0 0 0 1
+device=CONNECTOR
+T 20500 12500 5 10 1 1 90 5 1
+refdes=PORT2
+T 19900 14100 5 10 0 0 0 0 1
+symversion=20131217
+}
+C 15200 10300 1 0 1 CON-SIL-254P-6.sym
+{
+T 15000 13700 5 10 0 0 0 6 1
+footprint=CON-SIL-254P-6N____.fp
+T 15000 13500 5 10 0 0 0 6 1
+device=CONNECTOR
+T 14400 11700 5 10 1 1 90 3 1
+refdes=PORT3
+T 15000 13300 5 10 0 0 0 6 1
+symversion=20131217
+}
+C 24500 900 1 0 0 CC-BY-SA.sym
+{
+T 24600 1900 5 10 0 0 0 0 1
+symversion=20180915
+T 24600 2100 5 10 0 0 0 0 1
+footprint=CC-BY-SA.fp
+}
+C 23700 1200 1 0 0 OSHW.sym
+{
+T 23800 2400 5 10 0 0 0 0 1
+symversion=20201223
+}
+C 24500 600 1 0 0 Made_in_NL.sym
+{
+T 24600 1600 5 10 0 0 0 0 1
+symversion=20180915
+T 24600 1800 5 10 0 0 0 0 1
+footprint=NL_contour_filled_150x188.fp
+}

@@ -1,4 +1,4 @@
-v 20110115 2
+v 20130925 2
 C 0 200 0 0 0 A1-sheet.sym
 {
 T 26200 300 5 10 1 1 0 0 1
@@ -14,7 +14,7 @@ comment=schematic
 T 26200 1300 5 10 1 1 0 0 1
 description=8051 PLCC to DIP40 Board
 T 30100 600 5 10 1 1 0 0 1
-revision=20190121
+revision=20210726
 T 30100 300 5 10 1 1 0 0 1
 author=Bert Timmerman
 }
@@ -691,8 +691,6 @@ N 13100 8500 13300 8500 4
 T 13600 8500 5 10 1 1 0 0 1
 netname=ALE
 }
-T 12800 15200 5 10 1 1 0 6 1
-refdes=U1
 C 13300 8100 1 0 0 busripper-1.sym
 {
 T 13300 8500 5 8 0 0 0 0 1
@@ -703,8 +701,6 @@ N 13100 8100 13300 8100 4
 T 13600 8100 5 10 1 1 0 0 1
 netname=AE
 }
-T 12800 14800 5 10 1 1 0 6 1
-refdes=U1
 C 13300 7700 1 0 0 busripper-1.sym
 {
 T 13300 8100 5 8 0 0 0 0 1
@@ -715,8 +711,6 @@ N 13100 7700 13300 7700 4
 T 13600 7700 5 10 1 1 0 0 1
 netname=PSEN
 }
-T 12800 14400 5 10 1 1 0 6 1
-refdes=U1
 C 19600 8500 1 0 0 busripper-1.sym
 {
 T 19600 8900 5 8 0 0 0 0 1
@@ -783,4 +777,23 @@ T 15700 8000 5 10 0 0 0 0 1
 value=NoConnection
 T 15700 8400 5 10 0 0 0 0 1
 device=DRC_Directive
+}
+C 23700 1200 1 0 0 OSHW.sym
+{
+T 23800 2400 5 10 0 0 0 0 1
+symversion=20201223
+}
+C 24500 900 1 0 0 CC-BY-SA.sym
+{
+T 24600 1900 5 10 0 0 0 0 1
+symversion=20180915
+T 24600 2100 5 10 0 0 0 0 1
+footprint=CC-BY-SA.fp
+}
+C 24500 600 1 0 0 Made_in_NL.sym
+{
+T 24600 1600 5 10 0 0 0 0 1
+symversion=20180915
+T 24600 1800 5 10 0 0 0 0 1
+footprint=NL_contour_filled_150x188.fp
 }
