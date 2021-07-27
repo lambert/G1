@@ -7,32 +7,38 @@ END header
 
 START components
 
-R3 device=RESISTOR
-R2 device=RESISTOR
-R5 device=RESISTOR
-R6 device=RESISTOR
-R7 device=RESISTOR
-C10 device=POLARIZED_CAPACITOR
-S1 device=SWITCH_PUSHBUTTON_NO
-S2 device=SWITCH_DIP4
-J3 device=CONNECTOR
-J4 device=CONNECTOR
-C9 device=CAPACITOR
-C8 device=CAPACITOR
-X1 device=CRYSTAL
-C4 device=POLARIZED_CAPACITOR
+PORT3 device=CONNECTOR
+PORT2 device=CONNECTOR
+PORT0 device=CONNECTOR
+PORT1 device=CONNECTOR
+R1 device=RESISTOR
 C3 device=POLARIZED_CAPACITOR
-C2 device=POLARIZED_CAPACITOR
+C5 device=POLARIZED_CAPACITOR
+R2 device=RESISTOR
+D device=MTG
+C device=MTG
+B device=MTG
+A device=MTG
+D1 device=DIODE
+CN2 device=CONNECTOR
+U? device=INPUT
+R3 device=RESISTOR
+C10 device=POLARIZED_CAPACITOR
+SW1 device=SWITCH_PUSHBUTTON_NO
+DIP1 device=SWITCH_DIP4
+C7 device=CAPACITOR
+C9 device=CAPACITOR
+X1 device=CRYSTAL
 C1 device=POLARIZED_CAPACITOR
-J2 device=DB9
-D1 device=LED
+C13 device=POLARIZED_CAPACITOR
+C8 device=POLARIZED_CAPACITOR
+C4 device=POLARIZED_CAPACITOR
+CN1 device=DB9
 U3 device=MAX232
 U1 device=AT89C51_DIP
-R1 device=RESISTOR
-C11 device=CAPACITOR
-C6 device=POLARIZED_CAPACITOR
-C7 device=CAPACITOR
-J1 device=BARREL-JACK-NO
+C2 device=CAPACITOR
+C11 device=POLARIZED_CAPACITOR
+C6 device=CAPACITOR
 
 END components
 
@@ -43,66 +49,65 @@ END renamed-nets
 
 START nets
 
-unnamed_net25 : R6 2, S2 4 
-unnamed_net24 : R5 2, S2 3 
-unnamed_net23 : J2 1 
-unnamed_net22 : J2 6 
-unnamed_net21 : J2 7 
-unnamed_net20 : J2 8 
-unnamed_net19 : J2 4 
-unnamed_net18 : J2 9 
-unnamed_net17 : C1 1, U3 1 
-unnamed_net16 : J2 2, U3 14 
-unnamed_net15 : J2 3, U3 13 
-unnamed_net14 : U3 9 
-unnamed_net13 : U3 7 
-unnamed_net12 : C3 1, U3 6 
-unnamed_net11 : C2 2, U3 5 
-unnamed_net10 : C2 1, U3 4 
-unnamed_net9 : C1 2, U3 3 
-unnamed_net8 : C4 2, U3 2 
+unnamed_net54 : R1 1, C3 1, DIP1 6 
+unnamed_net53 : C5 2, R2 2, DIP1 5 
+unnamed_net52 : CN1 1 
+unnamed_net51 : CN1 6 
+unnamed_net50 : CN1 7 
+unnamed_net49 : CN1 8 
+unnamed_net48 : CN1 4 
+unnamed_net47 : CN1 9 
+unnamed_net46 : C4 1, U3 1 
+unnamed_net45 : CN1 2, U3 14 
+unnamed_net44 : CN1 3, U3 13 
+unnamed_net43 : U3 9 
+unnamed_net42 : U3 7 
+unnamed_net41 : C13 1, U3 6 
+unnamed_net40 : C8 2, U3 5 
+unnamed_net39 : C8 1, U3 4 
+unnamed_net38 : C4 2, U3 3 
+unnamed_net37 : C1 2, U3 2 
 Vcc : U3 16, U1 40 
-unnamed_net7 : X1 2, C9 1, U1 18 
-unnamed_net6 : X1 1, C8 1, U1 19 
-unnamed_net5 : C10 2, R7 2, S1 2, U1 9 
-P3_7 : J3 16, U1 17 
-P3_6 : J3 15, U1 16 
-P3_5 : J3 14, U1 15 
-P3_4 : J3 13, U1 14 
-P3_3 : J3 12, U1 13 
-P3_2 : J3 11, U1 12 
-P3_1 : J3 10, U3 11, U1 11 
-P3_0 : J3 9, U3 12, U1 10 
-P1_7 : R2 1, J3 8, U1 8 
-P1_6 : R3 1, J3 7, U1 7 
-P1_5 : J3 6, U1 6 
-P1_4 : J3 5, U1 5 
-P1_3 : J3 4, U1 4 
-P1_2 : J3 3, U1 3 
-P1_1 : J3 2, U1 2 
-P1_0 : J3 1, U1 1 
-unnamed_net4 : R6 1, U1 29 
-P2_7 : S2 1, J4 16, U1 28 
-P2_6 : S2 2, J4 15, U1 27 
-P2_5 : J4 14, U1 26 
-P2_4 : J4 13, U1 25 
-P2_3 : J4 12, U1 24 
-P2_2 : J4 11, U1 23 
-P2_1 : J4 10, U1 22 
-P2_0 : J4 9, U1 21 
-P0_7 : J4 8, U1 32 
-P0_6 : J4 7, U1 33 
-P0_5 : J4 6, U1 34 
-P0_4 : J4 5, U1 35 
-P0_3 : J4 4, U1 36 
-P0_2 : J4 3, U1 37 
-P0_1 : J4 2, U1 38 
-P0_0 : J4 1, U1 39 
-unnamed_net3 : R5 1, U1 31 
-unnamed_net2 : U1 30 
-unnamed_net1 : D1 2, R1 2 
-GND : R7 1, S2 5, J3 20, J3 19, J4 20, J4 19, C9 2, C8 2, C3 2, J2 5, U3 15, U1 20, J1 2, C11 2, C7 2, C6 2, D1 1, J1 3 
-+5V : R3 2, R2 2, C10 1, S1 1, S2 8, S2 7, S2 6, J3 18, J3 17, J4 18, J4 17, C4 1, U3 10, U3 8, C6 1, C7 1, C11 1, R1 1, J1 1 
+unnamed_net36 : X1 2, C7 1, U1 18 
+unnamed_net35 : X1 1, C9 1, U1 19 
+unnamed_net34 : D1 1, C10 2, R3 2, SW1 2, U1 9 
+unnamed_net33 : U1 17 
+unnamed_net32 : U1 16 
+unnamed_net31 : U1 15 
+unnamed_net30 : U1 14 
+unnamed_net29 : U1 13 
+unnamed_net28 : U1 12 
+P3_1 : U3 11, U1 11 
+P3_0 : U3 12, U1 10 
+unnamed_net27 : U1 8 
+unnamed_net26 : U1 7 
+unnamed_net25 : U1 6 
+unnamed_net24 : U1 5 
+unnamed_net23 : U1 4 
+unnamed_net22 : U1 3 
+unnamed_net21 : U1 2 
+unnamed_net20 : U1 1 
+unnamed_net19 : DIP1 4, U1 29 
+unnamed_net18 : DIP1 1, U1 28 
+unnamed_net17 : DIP1 2, U1 27 
+unnamed_net16 : U1 26 
+unnamed_net15 : U1 25 
+unnamed_net14 : U1 24 
+unnamed_net13 : U1 23 
+unnamed_net12 : U1 22 
+unnamed_net11 : U1 21 
+unnamed_net10 : U1 32 
+unnamed_net9 : U1 33 
+unnamed_net8 : U1 34 
+unnamed_net7 : U1 35 
+unnamed_net6 : U1 36 
+unnamed_net5 : U1 37 
+unnamed_net4 : U1 38 
+unnamed_net3 : U1 39 
+unnamed_net2 : DIP1 3, U1 31 
+unnamed_net1 : U1 30 
+GND : C3 2, R2 1, D1 2, R3 1, C7 2, C9 2, C13 2, CN1 5, U3 15, U1 20, CN2 2, C2 2, C11 2, C6 2 
++5V : R1 2, C5 1, C10 1, SW1 1, DIP1 8, DIP1 7, C1 1, U3 10, U3 8, CN2 1, C11 1, C2 1, C6 1 
 
 END nets
 

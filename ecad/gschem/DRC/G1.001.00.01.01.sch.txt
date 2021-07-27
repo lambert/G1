@@ -1,6 +1,10 @@
 Checking non-numbered parts...
+ERROR: Reference not numbered: U?
 
 Checking duplicated references...
+ERROR: Duplicated reference U?.
+
+Checking NoConnection nets for connections...
 
 Checking nets with only one connection...
 
@@ -12,12 +16,43 @@ WARNING: Pin(s) with pintype 'output': U3:12
 	to pin(s) with pintype 'input/output': U1:10 
 
 Checking unconnected pins...
+ERROR: Unconnected pin PORT3:1
+ERROR: Unconnected pin PORT3:2
+ERROR: Unconnected pin PORT3:3
+ERROR: Unconnected pin PORT3:4
+ERROR: Unconnected pin PORT3:5
+ERROR: Unconnected pin PORT3:6
+ERROR: Unconnected pin PORT2:1
+ERROR: Unconnected pin PORT2:2
+ERROR: Unconnected pin PORT2:3
+ERROR: Unconnected pin PORT2:4
+ERROR: Unconnected pin PORT2:5
+ERROR: Unconnected pin PORT2:6
+ERROR: Unconnected pin PORT0:1
+ERROR: Unconnected pin PORT0:2
+ERROR: Unconnected pin PORT0:3
+ERROR: Unconnected pin PORT0:4
+ERROR: Unconnected pin PORT0:5
+ERROR: Unconnected pin PORT0:6
+ERROR: Unconnected pin PORT0:7
+ERROR: Unconnected pin PORT0:8
+ERROR: Unconnected pin PORT1:1
+ERROR: Unconnected pin PORT1:2
+ERROR: Unconnected pin PORT1:3
+ERROR: Unconnected pin PORT1:4
+ERROR: Unconnected pin PORT1:5
+ERROR: Unconnected pin PORT1:6
+ERROR: Unconnected pin PORT1:7
+ERROR: Unconnected pin PORT1:8
 
 Checking slots...
 
 Checking duplicated slots...
+ERROR: duplicated slot 1 of uref U?
+ERROR: duplicated slot 1 of uref U?
+ERROR: duplicated slot 1 of uref U?
 
 Checking unused slots...
 
 Found 1 warnings.
-No errors found. 
+Found 33 errors.
